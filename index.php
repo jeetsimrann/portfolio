@@ -185,12 +185,10 @@
           <div class="aboutMeBio">
             <h2>About Me 🧐</h2>
             <p>
-              Hello again! Thanks for scrolling this far!! 🤗 I recently
-              graduated from <a href="https://junocollege.com/">Juno
-                College of
-                Technology</a> <span class="smallerText">(cohort 24 aka uno juno!)</span>. I also graduated from York
-              University & Sheridan
-              College with a bachelor of honors in design.
+              Hello again! Thanks for scrolling this far!! 🤗 I am currently in Third Year doing Computer Science from
+               <a href="https://www.yorku.ca/">York University</a> 
+               <!-- <span class="smallerText">(cohort 24 aka uno juno!)</span> -->
+               .I did my high school from Delhi Public SChool, Chandigarh, India.
             </p>
             <p>
               Other than coding, I spend most of my free time playing Animal Crossing <span class="smallerText">(add
