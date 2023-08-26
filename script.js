@@ -35,10 +35,34 @@ $(document).ready(function () {
     });
   });
   
+// Form submission
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevent the form's default submission
 
-  document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();  // prevent actual form submission
-    document.querySelector('.flipper').style.transform = 'rotateY(180deg)';
-    
-    // You can add any additional form submission logic here.
+        var formData = new FormData(e.target);  // Get form data
+
+        fetch('https://formspree.io/f/xleybaan', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.status === 200 || response.status === 201) {
+                // Flip effect on successful form submission
+                document.querySelector('.flipper').style.transform = 'rotateY(180deg)';
+            } else {
+                // Handle errors or show a message
+                alert('There was an error. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error. Please try again.');
+        });
+    });
+
 });
+

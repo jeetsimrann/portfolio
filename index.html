@@ -337,41 +337,36 @@
           </li>
         </ul>
       </div>
-      <div class="contactForm">
-        <!-- <form action="https://formspree.io/f/xleybaan" method="POST">
-          <label for="name" class="visuallyHidden">name</label>
-          <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required />
-          <label class="visuallyHidden" for="email">email</label>
-          <input type="email" name="_replyto" name="email" id="email" placeholder="email" required />
-          <label class="visuallyHidden" for="message" autocomplete="off">message</label>
-          <textarea name="message" id="message" placeholder="message" required=""></textarea>
-          <div class="submit-container">
-            <button class="send" type="submit">send message</button>
-          </div>
-        </form> -->
-
-        <div class="flip-container">
+            
+      <div class="contactForm flip-container">
           <div class="flipper">
-              <div class="front">
-                  <!-- Your Form Goes Here -->
-                  <form action="https://formspree.io/f/xleybaan" method="POST">
+                <!-- Front of the Flip Effect: The Form -->
+                <div class="front">
+                  <form action="#" method="POST" name="contact">
+                    <!-- Your Form Fields -->
                     <label for="name" class="visuallyHidden">name</label>
                     <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required />
+      
                     <label class="visuallyHidden" for="email">email</label>
-                    <input type="email" name="_replyto" name="email" id="email" placeholder="email" required />
+                    <input type="email" name="email" id="email" placeholder="email" required />
+      
                     <label class="visuallyHidden" for="message" autocomplete="off">message</label>
                     <textarea name="message" id="message" placeholder="message" required=""></textarea>
+      
                     <div class="submit-container">
                       <button class="send" type="submit">send message</button>
                     </div>
                   </form>
-              </div>
-              <div class="back">
-                  <p>Thanks! Your message has been sent.</p>
-              </div>
-          </div>
-        </div>
-      </div>
+                </div>
+      
+                <!-- Back of the Flip Effect: The Thank You Message -->
+                <div class="back">
+                  <h2>Thanks!</h2>
+                  <p>Your message has been sent.</p>
+                </div>
+           </div>
+       </div>
+       
     </div>
   </section>
   <footer>
