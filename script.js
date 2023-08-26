@@ -35,3 +35,10 @@ $(document).ready(function () {
     });
   });
   
+
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();  // prevent actual form submission
+    document.querySelector('.flipper').style.transform = 'rotateY(180deg)';
+    
+    // You can add any additional form submission logic here.
+});
